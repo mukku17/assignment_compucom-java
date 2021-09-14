@@ -1,0 +1,17 @@
+import java.util.*;
+public class evenodd {
+	public static void main (String [] args) {
+		int a;
+		Scanner no=new Scanner(System.in);
+		System.out.println("enter a no");
+		a = no.nextInt();
+		if (a%2==0) {
+			System.out.println("it is even no");
+		}
+		else {
+			System.out.println("it is odd no");
+		}
+			
+		}
+	}
+
