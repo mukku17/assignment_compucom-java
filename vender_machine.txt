@@ -1,0 +1,33 @@
+import java.util.*;
+public class vender {
+	public static void main(String [] args) {
+		int ammont ,originalAmount, quarters , dimes , nickels, pennies;
+		
+		System.out.println("Enter a whole number from 1 to 99.");
+		
+		
+		System.out.println("I will find a combination of coins");
+		System.out.println("that equals that amount of change.");
+		Scanner num=new Scanner(System.in);
+		ammont=num.nextInt();
+		
+		originalAmount=ammont;
+		quarters=ammont/25;
+		ammont=ammont%25;
+		
+		dimes=ammont/10;
+		ammont=ammont%10;
+		
+		nickels=ammont/5;
+		ammont=ammont%5;
+		
+		pennies=ammont;
+		
+		System.out.println(originalAmount + " cents in coins can be given as:");
+		System.out.println(quarters + "quarters");
+		System.out.println(dimes+ "dimes");
+		System.out.println(nickels+"nickels");
+		System.out.println(pennies+"pennies");
+	}
+
+}
